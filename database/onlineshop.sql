@@ -25,7 +25,8 @@ CREATE TABLE `admin_info` (
   `admin_name` varchar(100) NOT NULL,
   `admin_email` varchar(300) NOT NULL,
   `admin_password` varchar(300) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+;
 
 --
 -- Dumping data for table `admin_info`
@@ -43,7 +44,8 @@ INSERT INTO `admin_info` (`admin_id`, `admin_name`, `admin_email`, `admin_passwo
 CREATE TABLE `brands` (
   `brand_id` int(100) NOT NULL,
   `brand_title` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+;
 
 --
 -- Dumping data for table `brands`
@@ -69,7 +71,8 @@ CREATE TABLE `cart` (
   `ip_add` varchar(250) NOT NULL,
   `user_id` int(10) DEFAULT NULL,
   `qty` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+;
 
 --
 -- Dumping data for table `cart`
@@ -89,7 +92,8 @@ INSERT INTO `cart` (`id`, `p_id`, `ip_add`, `user_id`, `qty`) VALUES
 CREATE TABLE `categories` (
   `cat_id` int(100) NOT NULL,
   `cat_title` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+;
 
 --
 -- Dumping data for table `categories`
@@ -113,7 +117,8 @@ INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
 CREATE TABLE `email_info` (
   `email_id` int(100) NOT NULL,
   `email` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+;
 
 --
 -- Dumping data for table `email_info`
@@ -135,7 +140,8 @@ CREATE TABLE `logs` (
   `user_id` varchar(50) NOT NULL,
   `action` varchar(50) NOT NULL,
   `date` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+;
 
 -- --------------------------------------------------------
 
@@ -150,7 +156,8 @@ CREATE TABLE `orders` (
   `qty` int(11) NOT NULL,
   `trx_id` varchar(255) NOT NULL,
   `p_status` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+;
 
 --
 -- Dumping data for table `orders`
@@ -181,7 +188,8 @@ CREATE TABLE `orders_info` (
   `prod_count` int(15) DEFAULT NULL,
   `total_amt` int(15) DEFAULT NULL,
   `cvv` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+;
 
 --
 -- Dumping data for table `orders_info`
@@ -202,7 +210,8 @@ CREATE TABLE `order_products` (
   `product_id` int(11) NOT NULL,
   `qty` int(15) DEFAULT NULL,
   `amt` int(15) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+;
 
 --
 -- Dumping data for table `order_products`
@@ -228,7 +237,8 @@ CREATE TABLE `products` (
   `product_desc` text NOT NULL,
   `product_image` text NOT NULL,
   `product_keywords` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+;
 
 --
 -- Dumping data for table `products`
@@ -321,7 +331,8 @@ CREATE TABLE `reviews` (
   `review` varchar(255) NOT NULL,
   `datetime` datetime NOT NULL,
   `rating` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+;
 
 --
 -- Dumping data for table `reviews`
@@ -345,7 +356,8 @@ CREATE TABLE `user_info` (
   `mobile` varchar(10) NOT NULL,
   `address1` varchar(300) NOT NULL,
   `address2` varchar(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+;
 
 --
 -- Dumping data for table `user_info`
@@ -379,7 +391,8 @@ CREATE TABLE `user_info_backup` (
   `mobile` varchar(10) NOT NULL,
   `address1` varchar(300) NOT NULL,
   `address2` varchar(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+;
 
 --
 -- Dumping data for table `user_info_backup`
@@ -399,7 +412,8 @@ CREATE TABLE `wishlist` (
   `p_id` int(10) NOT NULL,
   `ip_add` varchar(250) NOT NULL,
   `user_id` int(10) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+;
 
 --
 -- Dumping data for table `wishlist`
